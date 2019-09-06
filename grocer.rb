@@ -4,7 +4,7 @@ def consolidate_cart(cart)
     if checkout[item.key[0]]
       checkout[item.key[0]][:count] += 1
     else
-      checkout[item.key[0]]{
+      checkout[item.key[0]] = {
         count: 1,
         price: item.values[0][:price],
         clearance: item.values[0][:clearance]
