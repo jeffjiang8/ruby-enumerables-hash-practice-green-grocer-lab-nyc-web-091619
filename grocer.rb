@@ -5,7 +5,8 @@ def consolidate_cart(cart)
       checkout[item.key[0]][:count] += 1
     else
       checkout[item.key[0]]{
-        :count = 1,
+        :count => 1,
+        :
         
       }
 end
