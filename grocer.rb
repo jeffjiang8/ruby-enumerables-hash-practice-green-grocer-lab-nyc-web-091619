@@ -20,6 +20,7 @@ def apply_coupons(cart, coupons)
     if cart.key.include? coupon[:item]
       if cart[coupon[:item][:count]] >= count[:num]
         dicounted = "#{[coupon[:item]]} W/ COUPON"
+      else
 
 def apply_clearance(cart)
   # code here
