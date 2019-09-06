@@ -28,6 +28,8 @@ def apply_coupons(cart, coupons)
             :price => coupon[:cost] / coupon[:num],
             :clearace => cart[[coupon[:item]][:clearance]
           }
+        end
+        
 
 def apply_clearance(cart)
   # code here
