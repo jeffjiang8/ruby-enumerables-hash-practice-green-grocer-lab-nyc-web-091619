@@ -21,7 +21,7 @@ def apply_coupons(cart, coupons)
       if cart[coupon[:item][:count]] >= count[:num]
         dicounted = "#{[coupon[:item]]} W/ COUPON"
         if cart[discounted]
-          cart[discounted][:count] += [coupon[:num]]
+          cart[discounted][:count] += coupon[:num]
         else
           cart[dicounted] = {
             :count => coupon[:num],
