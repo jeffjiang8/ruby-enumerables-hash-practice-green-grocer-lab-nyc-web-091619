@@ -1,6 +1,7 @@
 def consolidate_cart(cart)
   checkout = {}
   cart.each do |item|
+    if checkout{
 end
 
 def apply_coupons(cart, coupons)
