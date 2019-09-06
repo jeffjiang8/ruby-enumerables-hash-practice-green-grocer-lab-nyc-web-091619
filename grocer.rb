@@ -48,4 +48,12 @@ end
 
 def checkout(cart, coupons)
   # code here
+  check_out = consolidate_cart(cart)
+  cart_w_coupon = apply_coupons(check_out, coupons)
+  cart_w_discount = apply_clearance(cart_w_coupon)
+  total = 0.0 
+  cart_w_discount.keys.each do |item|
+    total += cart_w_discount[item][:price] * cart_w_discount[item][:count]
+  end
+  total > 100.00? (total * 0.90).round : total
 end
