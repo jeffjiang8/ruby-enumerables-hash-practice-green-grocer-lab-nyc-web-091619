@@ -4,6 +4,7 @@ def consolidate_cart(cart)
     if checkout{item.key[0]}
       checkout[item.key[0]][:count] += 1
     else
+      
 end
 
 def apply_coupons(cart, coupons)
