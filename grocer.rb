@@ -16,8 +16,8 @@ end
 
 def apply_coupons(cart, coupons)
   # code here
-  cart.select{|item, coupons| :clearance == true}
-end
+  cart.each do |coupons|
+    if 
 
 def apply_clearance(cart)
   # code here
