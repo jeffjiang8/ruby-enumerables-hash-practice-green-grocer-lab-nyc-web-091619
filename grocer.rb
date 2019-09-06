@@ -6,7 +6,7 @@ def consolidate_cart(cart)
     else
       checkout[item.key[0]]{
         :count => 1,
-        :
+        :price => 
         
       }
 end
