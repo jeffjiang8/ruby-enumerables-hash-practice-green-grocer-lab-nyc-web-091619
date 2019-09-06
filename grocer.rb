@@ -3,7 +3,7 @@ def consolidate_cart(cart)
   cart.each do |item|
     if checkout{item.key[0]}
       checkout[item.key[0]][:count] += 1
-    elsif
+    else
 end
 
 def apply_coupons(cart, coupons)
