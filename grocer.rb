@@ -16,7 +16,7 @@ end
 
 def apply_coupons(cart, coupons)
   # code here
-  cart.select{|item, clearance| :clearance == true}
+  cart.select{|item, coupons| :clearance == true}
 end
 
 def apply_clearance(cart)
