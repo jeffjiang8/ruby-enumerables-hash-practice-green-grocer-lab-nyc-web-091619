@@ -1,17 +1,17 @@
 def consolidate_cart(cart)
-  checkout = {}
+  check_out = {}
   cart.each do |item|
-    if checkout[item.keys[0]]
-      checkout[item.keys[0]][:count] += 1
+    if check_out[item.keys[0]]
+      check_out[item.keys[0]][:count] += 1
     else
-      checkout[item.keys[0]] = {
+      check_out[item.keys[0]] = {
         :count => 1,
         :price => item.values[0][:price],
         :clearance => item.values[0][:clearance]
       }
     end 
   end
-  checkout
+  check_out
 end
 
 def apply_coupons(cart, coupons)
