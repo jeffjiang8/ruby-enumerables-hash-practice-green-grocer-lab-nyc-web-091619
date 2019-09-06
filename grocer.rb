@@ -26,7 +26,7 @@ def apply_coupons(cart, coupons)
           cart[dicounted] = {
             :count => coupon[:num],
             :price => coupon[:cost] / coupon[:num],
-            :clearace => cart[[coupon[:item][:clearance]]]
+            :clearace => cart[[coupon[:item]][:clearance]
           }
 
 def apply_clearance(cart)
