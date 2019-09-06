@@ -5,13 +5,12 @@ def consolidate_cart(cart)
       checkout[item.keys[0]][:count] += 1
     else
       checkout[item.keys[0]] = {
-        count: 1,
-        price: item.values[0][:price],
-        clearance: item.values[0][:clearance]
+        :count => 1,
+        :price => item.values[0][:price],
+        :clearance => item.values[0][:clearance]
       }
     end 
   end
-  checkout
 end
 
 def apply_coupons(cart, coupons)
