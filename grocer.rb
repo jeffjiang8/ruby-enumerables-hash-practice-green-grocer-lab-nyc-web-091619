@@ -2,7 +2,8 @@ def consolidate_cart(cart)
   checkout = {}
   cart.each do |item|
     if checkout{item.key[0]}
-      checkout[item.key[0]][:clearance] += 1
+      checkout[item.key[0]][:count] += 1
+    elsif
 end
 
 def apply_coupons(cart, coupons)
