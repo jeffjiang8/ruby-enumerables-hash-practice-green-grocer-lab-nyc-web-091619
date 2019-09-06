@@ -7,7 +7,7 @@ def consolidate_cart(cart)
       checkout[item.key[0]]{
         :count => 1,
         :price => item.values[0][:price],
-        :clearance =>
+        :clearance => item.values[0]
         
       }
 end
