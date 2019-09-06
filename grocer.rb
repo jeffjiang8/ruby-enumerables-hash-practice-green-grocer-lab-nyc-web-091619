@@ -1,7 +1,7 @@
 def consolidate_cart(cart)
   checkout = {}
   cart.each do |item|
-    if checkout{item.key[0]}
+    if checkout[item.key[0]]
       checkout[item.key[0]][:count] += 1
     else
       checkout[item.key[0]]{
