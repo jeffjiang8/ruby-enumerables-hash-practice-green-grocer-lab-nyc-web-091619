@@ -29,7 +29,7 @@ def apply_coupons(cart, coupons)
             :clearace => cart[[coupon[:item]][:clearance]
           }
         end
-        
+        cart[coupon]
 
 def apply_clearance(cart)
   # code here
